@@ -1,0 +1,52 @@
+// Might things change visually when the counter is > 0 or < 0?
+// Where would the buttons look best?
+// Can you make the number “pop”
+
+
+$backgroundColor : rgb(49, 223, 63);
+$textColor : rgb(55, 20, 184);
+$buttons: black;
+
+@mixin flexCenter {
+  display: flex;
+  justify-content: center;
+}
+
+footer{
+  background-color: $backgroundColor;
+  color: $textColor;
+  font-size:2em;
+  @include flexCenter()
+}
+
+header{
+  background-color: $backgroundColor;
+  h1{
+    @include flexCenter();
+    color: $textColor;
+  }
+}
+
+#clickCount{
+  line-height: 4em;
+  font-size: 2em;
+  padding: 1em;
+  @include flexCenter();
+  justify-content: space-around;
+  #clickdown{
+    background-color: $buttons;
+    &:hover{
+      background: red;
+    }
+  }
+  h4{
+    
+    color: black;
+  }  
+  #clickup{
+    background-color: $buttons;
+    &:hover {
+      background: green;
+    }
+  }
+}
