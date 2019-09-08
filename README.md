@@ -1,5 +1,14 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+
+
+http://react-deploy-tests.s3-website-us-west-2.amazonaws.com/
+
+https://zealous-pasteur-275588.netlify.com/
+
+
+
+
 ## Available Scripts
 
 In the project directory, you can run:
